@@ -12,3 +12,11 @@ services:
       - ./data:/srv/data
     working_dir: /srv
     env_file: .env
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "${FRONTEND_PORT}:3000"
+    working_dir: /app
+    env_file: .env
+    command: npm start
