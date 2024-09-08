@@ -1,0 +1,3 @@
+{
+	"databaseDSN": "sqlite:%dataDir%/data.sqlite3"
+}

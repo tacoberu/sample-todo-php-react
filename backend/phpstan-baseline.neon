@@ -1,0 +1,66 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Method Taco\\\\Todo\\\\Application\\:\\:lookupRoutineFor\\(\\) should return Taco\\\\Todo\\\\Routine but returns object\\.$#"
+			count: 1
+			path: app/Application.php
+
+		-
+			message: "#^Negated boolean expression is always false\\.$#"
+			count: 1
+			path: app/Application.php
+
+		-
+			message: "#^Parameter \\#1 \\$conn of class Taco\\\\Todo\\\\TodoCreateOperation constructor expects PDO, object given\\.$#"
+			count: 1
+			path: app/DIC.php
+
+		-
+			message: "#^Parameter \\#1 \\$conn of class Taco\\\\Todo\\\\TodoQuery constructor expects PDO, object given\\.$#"
+			count: 1
+			path: app/DIC.php
+
+		-
+			message: "#^Parameter \\#1 \\$conn of class Taco\\\\Todo\\\\TodoRemoveOperation constructor expects PDO, object given\\.$#"
+			count: 1
+			path: app/DIC.php
+
+		-
+			message: "#^Parameter \\#1 \\$conn of class Taco\\\\Todo\\\\TodoUpdateOperation constructor expects PDO, object given\\.$#"
+			count: 1
+			path: app/DIC.php
+
+		-
+			message: "#^Parameter \\#1 \\$query of class Taco\\\\Todo\\\\TodoRoutine constructor expects Taco\\\\Todo\\\\TodoQuery, object given\\.$#"
+			count: 1
+			path: app/DIC.php
+
+		-
+			message: "#^Parameter \\#2 \\$creater of class Taco\\\\Todo\\\\TodoRoutine constructor expects Taco\\\\Todo\\\\TodoCreateOperation, object given\\.$#"
+			count: 1
+			path: app/DIC.php
+
+		-
+			message: "#^Parameter \\#3 \\$updater of class Taco\\\\Todo\\\\TodoRoutine constructor expects Taco\\\\Todo\\\\TodoUpdateOperation, object given\\.$#"
+			count: 1
+			path: app/DIC.php
+
+		-
+			message: "#^Parameter \\#4 \\$remover of class Taco\\\\Todo\\\\TodoRoutine constructor expects Taco\\\\Todo\\\\TodoRemoveOperation, object given\\.$#"
+			count: 1
+			path: app/DIC.php
+
+		-
+			message: "#^Method Taco\\\\Todo\\\\Request\\:\\:__construct\\(\\) has parameter \\$query with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: app/Request.php
+
+		-
+			message: "#^Property Taco\\\\Todo\\\\Request\\:\\:\\$query is never read, only written\\.$#"
+			count: 1
+			path: app/Request.php
+
+		-
+			message: "#^Parameter \\#2 \\$changes of method Taco\\\\Todo\\\\TodoUpdateOperation\\:\\:doPersistChanges\\(\\) expects array\\{id\\: int, title\\: string, description\\: string, status\\: string\\}, array given\\.$#"
+			count: 1
+			path: app/routines/TodoRoutine.php
