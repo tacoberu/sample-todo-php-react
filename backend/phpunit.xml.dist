@@ -7,9 +7,12 @@
 		processIsolation="false"
 		stopOnFailure="false"
 		bootstrap="vendor/autoload.php">
-  <testsuites>
-    <testsuite name="PHPUnit DOM Assertions Test Suite">
-      <directory suffix="Test.php">./tests</directory>
-    </testsuite>
-  </testsuites>
+	<testsuites>
+		<testsuite name="PHPUnit DOM Assertions Test Suite">
+			<directory suffix="Test.php">./tests</directory>
+		</testsuite>
+	</testsuites>
+	<php>
+		<env name="BACKEND_URL" value="http://localhost:8085/"/>
+	</php>
 </phpunit>
